@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+github:
+  token: ${GITHUB_TOKEN}
+  org: ${GITHUB_ORG}
+  api-base-url: https://api.github.com
+  per-page: 100
+  max-concurrent-requests: 10
+
+spring:
+  cache:
+    cache-names: accessReport
+    caffeine:
+      spec: maximumSize=10,expireAfterWrite=5m
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
