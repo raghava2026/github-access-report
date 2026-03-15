@@ -149,7 +149,7 @@ The token is read from the `GITHUB_TOKEN` environment variable
 defined in `application.yml`:
 ```yaml
 github:
-  token: ${GITHUB_TOKEN}
+  token: ${GITHUB_TOKEN} 
   org: ${GITHUB_ORG}
 ```
 
@@ -178,37 +178,61 @@ GET http://localhost:8082/api/access-report
 ```json
 {
   "organization": "raghava-org",
-  "generatedAt": "2026-03-14T13:07:53.993116100Z",
-  "totalRepositories": 5,
-  "totalUsers": 4,
+  "generatedAt": "2026-03-15T10:43:58.309039600Z",
+  "totalRepositories": 2,
+  "totalUsers": 3,
   "users": [
     {
-      "login": "alice",
-      "totalRepos": 4,
+      "login": "LABBISRIKANTHBABU",
+      "totalRepos": 2,
       "repositories": [
         {
-          "name": "backend-api",
-          "fullName": "raghava-org/backend-api",
-          "privateRepo": true,
-          "role": "admin"
+          "name": "MCP-Learning-path-Generator",
+          "fullName": "raghava-org/MCP-Learning-path-Generator",
+          "privateRepo": false,
+          "role": "read"
         },
         {
-          "name": "frontend-app",
-          "fullName": "raghava-org/frontend-app",
+          "name": "Screenshort-to-code",
+          "fullName": "raghava-org/Screenshort-to-code",
           "privateRepo": false,
-          "role": "write"
+          "role": "read"
         }
       ]
     },
     {
-      "login": "bob",
+      "login": "229x1a05h9",
       "totalRepos": 2,
       "repositories": [
         {
-          "name": "backend-api",
-          "fullName": "raghava-org/backend-api",
-          "privateRepo": true,
-          "role": "write"
+          "name": "MCP-Learning-path-Generator",
+          "fullName": "raghava-org/MCP-Learning-path-Generator",
+          "privateRepo": false,
+          "role": "admin"
+        },
+        {
+          "name": "Screenshort-to-code",
+          "fullName": "raghava-org/Screenshort-to-code",
+          "privateRepo": false,
+          "role": "admin"
+        }
+      ]
+    },
+    {
+      "login": "raghava2026",
+      "totalRepos": 2,
+      "repositories": [
+        {
+          "name": "MCP-Learning-path-Generator",
+          "fullName": "raghava-org/MCP-Learning-path-Generator",
+          "privateRepo": false,
+          "role": "admin"
+        },
+        {
+          "name": "Screenshort-to-code",
+          "fullName": "raghava-org/Screenshort-to-code",
+          "privateRepo": false,
+          "role": "admin"
         }
       ]
     }
